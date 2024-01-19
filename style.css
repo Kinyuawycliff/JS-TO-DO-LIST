@@ -1,0 +1,95 @@
+body{
+    background-color: #002765;
+}
+.todoList{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+h3{
+    color: #002765;
+    display: flex;
+    margin-right: 12em;
+    font-weight: 700;
+    font-family: cursive;
+}
+.row{
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left:20px;
+    margin-bottom: 25px;
+}
+input{
+    background:transparent;
+    padding: 10px;
+    font-weight: 14px;
+    border: none;
+    border-radius: 6px;
+    outline:none;
+}
+#addButton{
+    border: none;
+    margin-left: 206px;
+    padding: 16px 50px;
+    border-radius: 40px;
+    background-color:rgb(255, 136, 0);
+    color: white;
+    cursor: pointer;
+    font-family: cursive;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+#addButton:hover{
+    background-color:#ff5945 ;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 12px 8px 12px 50px;
+    color:black;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 0%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+}
+
+ul li .checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li .checked ::before{
+    background-image: url();
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+
+}
